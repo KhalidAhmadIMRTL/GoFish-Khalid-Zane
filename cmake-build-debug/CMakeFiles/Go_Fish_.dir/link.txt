@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Go_Fish_.dir/card.cpp.o CMakeFiles/Go_Fish_.dir/deck.cpp.o CMakeFiles/Go_Fish_.dir/go_fish.cpp.o CMakeFiles/Go_Fish_.dir/player.cpp.o  -o Go_Fish_ 

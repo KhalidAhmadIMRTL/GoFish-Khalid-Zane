@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.h
+iostream
+-
+string
+-
+
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/deck.h
+card.h
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.h
+
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/go_fish.cpp
+iostream
+-
+cstdlib
+-
+card.h
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.h
+player.h
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/player.h
+deck.h
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/deck.h
+
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/player.h
+iostream
+-
+string
+-
+vector
+-
+card.h
+/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.h
+
