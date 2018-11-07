@@ -24,25 +24,25 @@ string Card::toString() const {
     string outputRank;
     switch(myRank){
         case 1: outputRank = "A";
-        break;
+            break;
         case 11: outputRank = "J";
-        break;
+            break;
         case 12: outputRank = "Q";
-        break;
+            break;
         case 13: outputRank = "K";
-        break;
+            break;
         default: outputRank = to_string(myRank);
     }
     string outputSuit;
     switch(mySuit){
         case 0: outputSuit = "s";
-        break;
+            break;
         case 1: outputSuit = "h";
-        break;
+            break;
         case 2: outputSuit = "d";
-        break;
+            break;
         case 3: outputSuit = "c";
-        break;
+            break;
     }
     return (outputRank + outputSuit);
 }

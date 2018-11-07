@@ -30,6 +30,7 @@ Deck::Deck() {
         myCards[myIndex] = Card(j + 1, tempCard.clubs);
         myIndex++;
     }
+    myIndex--;
 }
 //8663088179
 void Deck::shuffle() {
@@ -46,7 +47,7 @@ void Deck::shuffle() {
 }
 
 Card Deck::dealCard() {
-    if(myIndex>=0){
+    if(myIndex>0){
         Card tempCard;
         tempCard = myCards[myIndex];
         myIndex --;
@@ -55,7 +56,7 @@ Card Deck::dealCard() {
 }
 
 int Deck::size() const {
-    return (myIndex+1);
+    return (SIZE - myIndex);
 }
 
 

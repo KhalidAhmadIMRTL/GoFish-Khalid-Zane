@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!"
+CMAKE_SOURCE_DIR = /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Go_Fish_.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/Go_Fish_.dir/flags.make
 
 CMakeFiles/Go_Fish_.dir/card.cpp.o: CMakeFiles/Go_Fish_.dir/flags.make
 CMakeFiles/Go_Fish_.dir/card.cpp.o: ../card.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Go_Fish_.dir/card.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/card.cpp.o -c "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Go_Fish_.dir/card.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/card.cpp.o -c /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.cpp
 
 CMakeFiles/Go_Fish_.dir/card.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Go_Fish_.dir/card.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.cpp" > CMakeFiles/Go_Fish_.dir/card.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.cpp > CMakeFiles/Go_Fish_.dir/card.cpp.i
 
 CMakeFiles/Go_Fish_.dir/card.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Go_Fish_.dir/card.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/card.cpp" -o CMakeFiles/Go_Fish_.dir/card.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.cpp -o CMakeFiles/Go_Fish_.dir/card.cpp.s
 
 CMakeFiles/Go_Fish_.dir/deck.cpp.o: CMakeFiles/Go_Fish_.dir/flags.make
 CMakeFiles/Go_Fish_.dir/deck.cpp.o: ../deck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Go_Fish_.dir/deck.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/deck.cpp.o -c "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/deck.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Go_Fish_.dir/deck.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/deck.cpp.o -c /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/deck.cpp
 
 CMakeFiles/Go_Fish_.dir/deck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Go_Fish_.dir/deck.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/deck.cpp" > CMakeFiles/Go_Fish_.dir/deck.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/deck.cpp > CMakeFiles/Go_Fish_.dir/deck.cpp.i
 
 CMakeFiles/Go_Fish_.dir/deck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Go_Fish_.dir/deck.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/deck.cpp" -o CMakeFiles/Go_Fish_.dir/deck.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/deck.cpp -o CMakeFiles/Go_Fish_.dir/deck.cpp.s
 
 CMakeFiles/Go_Fish_.dir/go_fish.cpp.o: CMakeFiles/Go_Fish_.dir/flags.make
 CMakeFiles/Go_Fish_.dir/go_fish.cpp.o: ../go_fish.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Go_Fish_.dir/go_fish.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/go_fish.cpp.o -c "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/go_fish.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Go_Fish_.dir/go_fish.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/go_fish.cpp.o -c /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/go_fish.cpp
 
 CMakeFiles/Go_Fish_.dir/go_fish.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Go_Fish_.dir/go_fish.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/go_fish.cpp" > CMakeFiles/Go_Fish_.dir/go_fish.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/go_fish.cpp > CMakeFiles/Go_Fish_.dir/go_fish.cpp.i
 
 CMakeFiles/Go_Fish_.dir/go_fish.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Go_Fish_.dir/go_fish.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/go_fish.cpp" -o CMakeFiles/Go_Fish_.dir/go_fish.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/go_fish.cpp -o CMakeFiles/Go_Fish_.dir/go_fish.cpp.s
 
 CMakeFiles/Go_Fish_.dir/player.cpp.o: CMakeFiles/Go_Fish_.dir/flags.make
 CMakeFiles/Go_Fish_.dir/player.cpp.o: ../player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Go_Fish_.dir/player.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/player.cpp.o -c "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/player.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Go_Fish_.dir/player.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Go_Fish_.dir/player.cpp.o -c /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/player.cpp
 
 CMakeFiles/Go_Fish_.dir/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Go_Fish_.dir/player.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/player.cpp" > CMakeFiles/Go_Fish_.dir/player.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/player.cpp > CMakeFiles/Go_Fish_.dir/player.cpp.i
 
 CMakeFiles/Go_Fish_.dir/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Go_Fish_.dir/player.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/player.cpp" -o CMakeFiles/Go_Fish_.dir/player.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/player.cpp -o CMakeFiles/Go_Fish_.dir/player.cpp.s
 
 # Object files for target Go_Fish_
 Go_Fish__OBJECTS = \
@@ -125,7 +125,7 @@ Go_Fish_: CMakeFiles/Go_Fish_.dir/go_fish.cpp.o
 Go_Fish_: CMakeFiles/Go_Fish_.dir/player.cpp.o
 Go_Fish_: CMakeFiles/Go_Fish_.dir/build.make
 Go_Fish_: CMakeFiles/Go_Fish_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Go_Fish_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Go_Fish_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Go_Fish_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/Go_Fish_.dir/clean:
 .PHONY : CMakeFiles/Go_Fish_.dir/clean
 
 CMakeFiles/Go_Fish_.dir/depend:
-	cd "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!" "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!" "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug" "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug" "/Users/KhalidIMRTL/Desktop/FALL18/EE312/Go Fish!/cmake-build-debug/CMakeFiles/Go_Fish_.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/cmake-build-debug/CMakeFiles/Go_Fish_.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Go_Fish_.dir/depend
 
