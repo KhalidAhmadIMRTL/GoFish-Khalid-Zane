@@ -2,6 +2,7 @@
 // This is a small demonstration program showing how the Card and Deck classes are used.
 #include <iostream>    // Provides cout and cin
 #include <cstdlib>     // Provides EXIT_SUCCESS
+#include <fstream>
 #include "card.h"
 #include "player.h"
 #include "deck.h"
@@ -13,11 +14,19 @@ using namespace std;
 void dealHand(Deck &d, Player &p, int numCards);
 void inputPlayers(int numPlayers);
 int main( ) {
-    cout << "Game played all the way to the end" << endl;
+    ofstream myFile;
+    myFile.open ("gofish_results.txt");
+    if (myFile.is_open()){
+        cout << "All results are in the Text File";
+    }else{
+        cout << "Error opening file";
+    }
+
+    myFile << "Game played all the way to the end" << endl;
     //Set numCards each player gets and numPlayers
     int numCards = 12;
     if(numCards > 52/2){
-        cout << "Cards dealt wrong.";
+        myFile << "Cards dealt wrong.";
         return EXIT_SUCCESS;
     }
     int books = 0;
@@ -39,12 +48,12 @@ int main( ) {
     dealHand(d, p1, numCards);
     dealHand(d, p2, numCards);
     //Initial hands
-    cout << p1.getName() << " has : " << p1.showHand() << endl;
-    cout << p2.getName() << " has : " << p2.showHand() << endl;
+    myFile << p1.getName() << " has : " << p1.showHand() << endl;
+    myFile << p2.getName() << " has : " << p2.showHand() << endl;
 
     //Begin Game
     bool playGame = true;
-    cout << "Let the Games Begin\n" << endl;
+    myFile << "Let the Games Begin\n" << endl;
     //Card declarations
     Card playCard;
     Card playCard2;
@@ -66,31 +75,31 @@ int main( ) {
             //cout << "Khalid: " << p1.showHand() << endl;
             //cout << "Zane: " << p2.showHand() << endl;
             //Asking opponent if they have that rank (Print statement)
-            cout << p1.getName() << " asks - Do you have a " << playCard.rankString(rank) << "." << endl;
+            myFile << p1.getName() << " asks - Do you have a " << playCard.rankString(rank) << "." << endl;
             //check if opponent has card
             if (p2.cardInHand(playCard)) {
                 //AT THIS POINT opponent has card
                 //Player 1 will book this rank.
-                cout << p2.getName() << " says - Yes. I have a " << playCard.rankString(rank) << "." << endl;
+                myFile << p2.getName() << " says - Yes. I have a " << playCard.rankString(rank) << "." << endl;
                 //Remove card from opponents hand and put into secondary card
                 playCard2 = p2.removeCardFromHand(playCard);
                 //book the card you had in hand and the opponents card
                 p1.bookCards(playCard, playCard2);
                 //Print booked cards
-                cout << p1.getName() << " books " << playCard.toString() << " and " << playCard2.toString() << "."
+                myFile << p1.getName() << " books " << playCard.toString() << " and " << playCard2.toString() << "."
                      << endl;
             } else {
                 //AT THIS POINT opponent did not have card you asked for
                 //Player 1 will take a card from the deck
                 //PLayer 2 says GO FISH
-                cout << p2.getName() << " says - Go Fish." << endl;
+                myFile << p2.getName() << " says - Go Fish." << endl;
                 //declare the card to be added and remove from deck
                 Card addCard1 = d.dealCard();
                 p1.addCard(addCard1);
-                cout << p1.getName() << " draws " << addCard1.toString() << "." << endl;
+                myFile << p1.getName() << " draws " << addCard1.toString() << "." << endl;
                 if (p1.checkHandForPair(playCard, addCard1)) {
                     p1.bookCards(playCard, addCard1);
-                    cout << p1.getName() << " books " << playCard.toString() << " and " << addCard1.toString() << "."
+                    myFile << p1.getName() << " books " << playCard.toString() << " and " << addCard1.toString() << "."
                          << endl;
                 }
             }
@@ -98,10 +107,10 @@ int main( ) {
             if (d.size() != 0) {
                 Card addCard1 = d.dealCard();
                 p1.addCard(addCard1);
-                cout << p1.getName() << " draws " << addCard1.toString() << "." << endl;
+                myFile << p1.getName() << " draws " << addCard1.toString() << "." << endl;
                 if (p1.checkHandForPair(playCard, addCard1)) {
                     p1.bookCards(playCard, addCard1);
-                    cout << p1.getName() << " books " << playCard.toString() << " and " << addCard1.toString() << "."
+                    myFile << p1.getName() << " books " << playCard.toString() << " and " << addCard1.toString() << "."
                          << endl;
                 }
             }
@@ -111,7 +120,7 @@ int main( ) {
         //books = p1.getBookSize() + p2.getBookSize();
         //cout << "\nBooks: " << books << endl;
         //cout << "Size of Deck: " << d.size() << endl;
-        cout << endl;
+        myFile << endl;
 ////////////////////////////////////////////////////////////
         if (p2.getHandSize() != 0) {
             //selecting a card from player 2
@@ -119,31 +128,31 @@ int main( ) {
             //getting the rank of this card
             rank = playCard.getRank();
             //Asking opponent if they have that rank (Print statement)
-            cout << p2.getName() << " asks - Do you have a " << playCard.rankString(rank) << "." << endl;
+            myFile << p2.getName() << " asks - Do you have a " << playCard.rankString(rank) << "." << endl;
             //check if opponent has card
             if (p1.cardInHand(playCard)) {
                 //AT THIS POINT opponent has card
                 //Player 2 will book this rank.
-                cout << p1.getName() << " says - Yes. I have a " << playCard.rankString(rank) << "." << endl;
+                myFile << p1.getName() << " says - Yes. I have a " << playCard.rankString(rank) << "." << endl;
                 //Remove card from opponents hand and put into secondary card
                 playCard2 = p1.removeCardFromHand(playCard);
                 //book the card you had in hand and the opponents card
                 p2.bookCards(playCard, playCard2);
                 //Print booked cards
-                cout << p2.getName() << " books " << playCard.toString() << " and " << playCard2.toString() << "."
+                myFile << p2.getName() << " books " << playCard.toString() << " and " << playCard2.toString() << "."
                      << endl;
             } else {
                 //AT THIS POINT opponent did not have card you asked for
                 //Player 1 will take a card from the deck
                 //PLayer 2 says GO FISH
-                cout << p1.getName() << " says - Go Fish." << endl;
+                myFile << p1.getName() << " says - Go Fish." << endl;
                 //declare the card to be added and remove from deck
                 Card addCard2 = d.dealCard();
                 p2.addCard(addCard2);
-                cout << p2.getName() << " draws " << addCard2.toString() << "." << endl;
+                myFile << p2.getName() << " draws " << addCard2.toString() << "." << endl;
                 if (p2.checkHandForPair(playCard, addCard2)) {
                     p2.bookCards(playCard, addCard2);
-                    cout << p2.getName() << " books " << playCard.toString() << " and " << addCard2.toString() << "."
+                    myFile << p2.getName() << " books " << playCard.toString() << " and " << addCard2.toString() << "."
                          << endl;
                 }
             }
@@ -151,22 +160,22 @@ int main( ) {
             if (d.size() != 0) {
                 Card addCard2 = d.dealCard();
                 p2.addCard(addCard2);
-                cout << p2.getName() << " draws " << addCard2.toString() << "." << endl;
+                myFile << p2.getName() << " draws " << addCard2.toString() << "." << endl;
                 if (p2.checkHandForPair(playCard, addCard2)) {
                     p2.bookCards(playCard, addCard2);
-                    cout << p2.getName() << " books " << playCard.toString() << " and " << addCard2.toString() << "."
+                    myFile << p2.getName() << " books " << playCard.toString() << " and " << addCard2.toString() << "."
                          << endl;
                 }
             }
         }
         if (p1.getBookSize() + p2.getBookSize() == 26) {
             if (p1.getBookSize() > p2.getBookSize()) {
-                cout << "Khalid wins";
+                myFile << "Khalid wins";
             } else
             if(p2.getBookSize() > p1.getBookSize()){
-                cout << "Zane wins";
+                myFile << "Zane wins";
             }
-            else cout << "Its a tie";
+            else myFile << "Its a tie";
             playGame = false;
         }
         //debug stuff
@@ -174,8 +183,9 @@ int main( ) {
         //cout << "\nBooks: " << books << endl;
         //cout << "Size of Deck: " << d.size() << endl;
         //d.showDeck();
-        cout << "\n";
+        myFile << "\n";
     }
+    myFile.close();
     return EXIT_SUCCESS;
 }
 
