@@ -61,6 +61,4 @@ private:
 
 ostream& operator << (ostream& out, const Card& c);
 
-
-
 #endif

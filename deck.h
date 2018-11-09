@@ -31,6 +31,8 @@ public:
     void shuffle();   // shuffle the deck, all 52 cards present
     Card dealCard();   // get a card, after 52 are dealt, fail
 
+    void showDeck();
+
     int  size() const; // # cards left in the deck
 
 private:

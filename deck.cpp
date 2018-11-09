@@ -30,12 +30,11 @@ Deck::Deck() {
         myCards[myIndex] = Card(j + 1, tempCard.clubs);
         myIndex++;
     }
-    myIndex--;
+    myIndex = 51;
 }
-//8663088179
 void Deck::shuffle() {
     //First create ordered set
-    Deck();
+    //Deck();
     int numCards = SIZE;
     //Set seed
     srand(time(NULL));
@@ -47,7 +46,7 @@ void Deck::shuffle() {
 }
 
 Card Deck::dealCard() {
-    if(myIndex>0){
+    if(myIndex>-1){
         Card tempCard;
         tempCard = myCards[myIndex];
         myIndex --;
@@ -56,8 +55,17 @@ Card Deck::dealCard() {
 }
 
 int Deck::size() const {
-    return (SIZE - myIndex);
+    return (myIndex + 1);
 }
 
-
+void Deck::showDeck() {
+    for ( int i = 0 ; i < myIndex + 1 ; i++){
+        Card tempCard = myCards[myIndex-i];
+        cout << tempCard.toString()  << ", ";
+        if( i % 13  == 0){
+            cout << "\n";
+        }
+    }
+    cout << "\n" << "END OF SHOW DECK" << endl;
+}
 

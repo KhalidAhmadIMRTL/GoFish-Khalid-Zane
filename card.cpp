@@ -94,8 +94,10 @@ bool Card::operator!=(const Card &rhs) const {
     return (this->toString() != rhs.toString());
 }
 
-
-
+ostream& operator << (ostream& out, const Card& c){
+    //   out << c;
+    //   return out;
+}
 
 
 
