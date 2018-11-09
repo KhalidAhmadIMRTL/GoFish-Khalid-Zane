@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 #include <time.h>
 #include <cstdlib>
 #include <stdio.h>
@@ -21,7 +22,9 @@ Card::Card(int rank, Suit s){
 }
 
 string Card::toString() const {
-    string outputRank;
+    std::string outputRank;
+    std::stringstream ss;
+    ss << myRank;
     switch(myRank){
         case 1: outputRank = "A";
             break;
@@ -31,8 +34,9 @@ string Card::toString() const {
             break;
         case 13: outputRank = "K";
             break;
-        default: outputRank = to_string(myRank);
+        default: outputRank = ss.str();
     }
+
     string outputSuit;
     switch(mySuit){
         case 0: outputSuit = "s";
@@ -71,7 +75,9 @@ string Card::suitString(Card::Suit s) const {
 }
 
 string Card::rankString(int r) const {
-    string outputRank;
+    std::string outputRank;
+    std::stringstream ss;
+    ss << myRank;
     switch(myRank){
         case 1: outputRank = "A";
             break;
@@ -81,7 +87,7 @@ string Card::rankString(int r) const {
             break;
         case 13: outputRank = "K";
             break;
-        default: outputRank = to_string(myRank);
+        default: outputRank = ss.str();
     }
     return outputRank;
 }

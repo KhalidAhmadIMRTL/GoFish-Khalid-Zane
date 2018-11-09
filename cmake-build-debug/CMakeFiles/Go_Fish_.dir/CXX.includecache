@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.cpp
+iostream
+-
+string
+-
+sstream
+-
+time.h
+-
+cstdlib
+-
+stdio.h
+-
+stdlib.h
+-
+ctime
+-
+deck.h
+/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/deck.h
+player.h
+/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/player.h
+card.h
+/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.h
+
 /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.h
 iostream
 -
@@ -15,20 +39,6 @@ string
 /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/deck.h
 card.h
 /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.h
-
-/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/go_fish.cpp
-iostream
--
-cstdlib
--
-fstream
--
-card.h
-/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/card.h
-player.h
-/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/player.h
-deck.h
-/Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/deck.h
 
 /Users/zanefreeman/Documents/GitHub/GoFish-Khalid-Zane/player.h
 iostream
